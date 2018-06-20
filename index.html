@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+  <!-- UI Kit CSS -->
+  <link rel="stylesheet" href="css/ui-kit.min.css">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/site.css">
+
+  <!-- Prism -->
+  <link rel="stylesheet" href="css/prism.css">
+
+  <title>Navbars</title>
+</head>
+
+<body class="navbar-page" data-spy="scroll" data-target="#nav-secondary" data-offset="0">
+  <!-- SITE NAVBAR -->
+  <nav id="nav-primary" class="navbar navbar-expand-lg navbar-dark font-weight-bold border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="index.html">Dobson UI Kit</a>
+      <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="navbars.html">Navbars
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buttons.html">Buttons</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end SITE NAVBAR-->
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="js/prism.js"></script>
+  <script>
+    $('body').scrollspy({ target: '#nav-secondary' })
+
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function (e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
+</body>
+
+</html>

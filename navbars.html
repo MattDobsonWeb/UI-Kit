@@ -25,300 +25,541 @@
   <title>Navbars</title>
 </head>
 
-<body class="navbar-page">
-  <div class="container">
-    <section class="default-navbar">
-      <div class="section-header">
-        <h1 class="heading">Default Navbar</h1>
+<body class="navbar-page" data-spy="scroll" data-target="#nav-secondary" data-offset="0">
+  <!-- SITE NAVBAR -->
+  <nav id="nav-primary" class="navbar navbar-expand-lg navbar-dark font-weight-bold border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="index.html">Dobson UI Kit</a>
+      <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="navbars.html">Navbars
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buttons.html">Buttons</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="section-content">
-        <!-- Default Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- Secondary Nav -->
+  <ul id="nav-secondary" class="nav justify-content-center border-bottom sticky-top bg-light">
+    <li class="nav-item">
+      <a class="nav-link" href="#default-navbar">Default</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#right-aligned-navbar">Right Aligned</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bold-navbar">Bold</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#centered-brand-left">Centered - Toggle Left</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#centered-brand-right">Centered - Toggle Right</a>
+    </li>
+  </ul>
+  <!-- end SITE NAVBAR-->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-        <!-- end Default Navbar-->
-      </div>
+  <main>
+    <div class="container">
 
-    </section>
 
-    <section class="default-navbar">
-      <div class="section-header">
-        <h1 class="heading">Right Aligned Navbar</h1>
-      </div>
-
-      <div class="section-content">
-        <!-- Right Aligned Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- end Right Aligned Navbar -->
-      </div>
-
-      <div class="section-code">
-        <pre><code data-src="buttons.htm;" class="language-markup"><xmp><!-- Right Aligned Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+      <!-- DEFAULT NAVBAR -->
+      <section id="default-navbar">
+        <div class="section-header">
+          <h3 class="heading">Default Navbar</h3>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
+
+        <div class="section-content">
+          <!-- Default Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- end Default Navbar-->
+        </div>
+
+        <div class="section-code">
+          <pre><code data-src="buttons.htm;" class="language-markup"><xmp>
+<!-- Default Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
-<!-- end Right Aligned Navbar --></xmp></code></pre>
-      </div>
-    </section>
+<!-- end Default Navbar-->
+          </xmp></code></pre>
+        </div>
+      </section>
 
-    <section class="default-navbar">
-      <div class="section-header">
-        <h1 class="heading">Bold Navbar</h1>
-        <h4 class="subheading text-muted">Just add
-          <code>.font-weight-bold</code> and
-          <code>.text-uppercase</code>.
-          <i>These are default Bootstrap classes.</i>
-        </h4>
-      </div>
+      <!-- RIGHT - ALIGNED -->
+      <section id="right-aligned-navbar">
+        <div class="section-header">
+          <h3 class="heading">Right Aligned Navbar</h3>
+        </div>
 
-      <div class="section-content">
-        <!-- Bold Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary font-weight-bold text-uppercase">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="section-content">
+          <!-- Right Aligned Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRightAligned" aria-controls="navbarRightAligned"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
+              <div class="collapse navbar-collapse" id="navbarRightAligned">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end Right Aligned Navbar -->
+        </div>
+
+        <div class="section-code">
+          <pre><code data-src="buttons.htm;" class="language-markup"><xmp>
+<!-- Right Aligned Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRightAligned" aria-controls="navbarRightAligned"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarRightAligned">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </nav>
-        <!-- end Bold Navbar -->
-      </div>
-    </section>
-
-    <section class="centered-brand-left">
-      <div class="section-header">
-        <h1 class="heading">Centered Brand - Toggle Left</h1>
-      </div>
-
-      <div class="section-content">
-        <!-- Brand Centered - Toggle Left -->
-        <nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link pl-0" href="#">Home
-                    <span class="sr-only">Home</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="//codeply.com">Codeply</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-
-              </ul>
-            </div>
-            <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
-            <div class="navbar-collapse collapse dual-nav w-50 order-2">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- end Brand Centered - Toggle Left -->
-      </div>
-    </section>
-
-    <section class="centered-brand-left">
-      <div class="section-header">
-        <h1 class="heading">Centered Brand - Toggle Right</h1>
-      </div>
-
-      <div class="section-content">
-        <!-- Brand Centered - Toggle Right -->
-        <nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
-          <div class="container-fluid">
-            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target=".dual-nav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link pl-0" href="#">Home
-                    <span class="sr-only">Home</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="//codeply.com">Codeply</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-            </div>
-            <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
-            <div class="navbar-collapse collapse dual-nav w-50 order-2">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- end Brand Centered - Toggle Right -->
-      </div>
-    </section>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+<!-- end Right Aligned Navbar -->
+          </xmp></code></pre>
+        </div>
+      </section>
+
+      <!-- BOLD NAVBAR -->
+      <section id="bold-navbar">
+        <div class="section-header">
+          <h3 class="heading">Bold Navbar</h3>
+          <h5 class="subheading text-muted">Just add
+            <code>.font-weight-bold</code> and
+            <code>.text-uppercase</code>.
+            <i>These are default Bootstrap classes.</i>
+          </h5>
+        </div>
+
+        <div class="section-content">
+          <!-- Bold Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary font-weight-bold text-uppercase">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#boldNavbar" aria-controls="boldNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="boldNavbar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end Bold Navbar -->
+        </div>
+
+        <div class="section-code">
+          <pre><code data-src="buttons.htm;" class="language-markup"><xmp>
+<!-- Bold Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary font-weight-bold text-uppercase">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#boldNavbar" aria-controls="boldNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="boldNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end Bold Navbar -->
+            </xmp></code></pre>
+        </div>
+      </section>
+
+      <!-- CENTERED BRAND - TOGGLE LEFT -->
+      <section id="centered-brand-left">
+        <div class="section-header">
+          <h3 class="heading">Centered Brand - Toggle Left</h3>
+        </div>
+
+        <div class="section-content">
+          <!-- Brand Centered - Toggle Left -->
+          <nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link pl-0" href="#">Home
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Codeply</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
+              <div class="navbar-collapse collapse dual-nav w-50 order-2">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end Brand Centered - Toggle Left -->
+        </div>
+
+        <div class="section-code">
+          <pre><code data-src="buttons.htm;" class="language-markup"><xmp>
+<!-- Brand Centered - Toggle Left -->
+<nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="#">Home
+            <span class="sr-only">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="//codeply.com">Codeply</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
+    <div class="navbar-collapse collapse dual-nav w-50 order-2">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end Brand Centered - Toggle Left -->
+              </xmp></code></pre>
+        </div>
+      </section>
+
+      <section id="centered-brand-right">
+        <div class="section-header">
+          <h3 class="heading">Centered Brand - Toggle Right</h3>
+        </div>
+
+        <div class="section-content">
+          <!-- Brand Centered - Toggle Right -->
+          <nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
+            <div class="container">
+              <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target=".dual-nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link pl-0" href="#">Home
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Codeply</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
+              <div class="navbar-collapse collapse dual-nav w-50 order-2">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- end Brand Centered - Toggle Right -->
+        </div>
+
+        <div class="section-code">
+          <pre><code data-src="buttons.htm;" class="language-markup"><xmp>
+<!-- Brand Centered - Toggle Right -->
+<nav class="navbar navbar-dark navbar-expand-md bg-success justify-content-between">
+  <div class="container">
+    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target=".dual-nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="#">Home
+            <span class="sr-only">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="//codeply.com">Codeply</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Brand</a>
+    <div class="navbar-collapse collapse dual-nav w-50 order-2">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end Brand Centered - Toggle Right -->
+                </xmp></code></pre>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -328,6 +569,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="js/prism.js"></script>
+  <script>
+    $('body').scrollspy({ target: '#nav-secondary' })
+
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function (e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
 </body>
 
 </html>

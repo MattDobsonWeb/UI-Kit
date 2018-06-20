@@ -1,12 +1,13 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
+  position: relative;
 }
 
 section {
-  margin-top: 3em;
+  padding-top: 3em;
 }
 
-.section-header h1 {
+.section-header .heading {
   font-weight: 700;
 }
 
@@ -22,4 +23,46 @@ section {
 pre {
   max-height: 300px;
   background-color: #f8f9fa !important;
+}
+
+/* Hamburger Styling */
+.nav-secondary .hamburger .hamburger-inner,
+.nav-secondary .hamburger .hamburger-inner::before,
+.nav-secondary .hamburger .hamburger-inner::after {
+  background-color: #6c757d;
+}
+
+.nav-secondary .hamburger.is-active .hamburger-inner {
+  background-color: transparent;
+}
+
+.nav-secondary .hamburger {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Navs */
+#nav-primary {
+  background: #563d7c;
+}
+
+#nav-primary .navbar-brand {
+  font-size: 1.5em;
+}
+
+#nav-primary .navbar-nav {
+  font-size: 1em;
+}
+
+#nav-secondary a {
+  color: #6c757d;
+}
+
+#nav-secondary a:hover {
+  color: #000;
+}
+
+#nav-secondary .nav-link.active {
+  font-weight: 700;
+  color: #000;
 }
